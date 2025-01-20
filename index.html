@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Centauro</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#Inicio">INÍCIO</a>
+        <a href="#Sobre">SOBRE</a>
+        <a href="#Eventos">EVENTOS</a>
+        <a href="#Patrocinio">PATROCÍNIO</a>
+      </nav>
+    </header>
+    <div class="container-inicio" id="Inicio">
+      <div class="filter"></div>
+      <div class="background-inicio-logo">
+        <img class="desbrava-desktop" src="imagens/logo-desbrava.svg" alt="" />
+        <div class="image-mobile">
+          <img class="desbrava-mobile" src="imagens/logo-desbrava-mobile.svg" alt="">
+          <img class="desbrava-mobile desbrava-nike" src="imagens/logo-nike-mobile.svg" alt="">
+        </div>
+        <div class="background-inicio-texto">
+          <div class="line"></div>
+          <h1>Descubra seu corre por percursos inéditos pelo Brasil!</h1>
+          <p>A Centauro estará em 10 circuitos inéditos de corrida de rua.</p>
+        </div>
+      </div>
+      <div class="background-inicio"></div>
+    </div>
+    <div class="container-projeto" id="Sobre">
+      <div class="filter-background"></div>
+      <div class="filter-play">
+        <img src="imagens/banner-play.jpg" alt="" />
+      </div>
+      <div class="wrapper-projeto">
+        <h2>SOBRE O PROJETO</h2>
+        <p>
+          A Centauro e a Nike se juntaram para mostrar que corrida não é somente um esporte, mas um estilo de vida. 
+        </p>
+        <p>Te convidamos a descobrir seu corre de rua por percursos inéditos presentes pelo Brasil.</p> 
+          <strong>Vamos desbravar juntos?</strong>
+      </div>
+      <div class="wrapper-play">
+        <div>
+          <a target="_blank" href="https://www.youtube.com/watch?v=sIfSLZYX5Q8">
+            <img src="imagens/logo-play.svg" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="container-circuitos" id="Eventos">
+      <div class="circuitos">
+        <div class="circuitos-title">
+          <h2>DESBRAVA 2024</h2>
+          <p>
+            Percursos inéditos, kits exclusivos, benefícios e muito mais!
+          </p>
+        </div>
+        <div class="circuitos-button">
+          <button class="button-selected" data-filter="todos">Todos</button>
+          <button data-filter="embreve">Em breve</button>
+          <button data-filter="aberto">Abertos</button>
+          <button class="button-desativado" disabled>Esgotados</button>
+          <button class="button-desativado" disabled>Realizados</button>
+          <button class="button-desativado" disabled>Encerrados</button>
+        </div>
+        <div class="circuitos-select-mobile">
+          <select name="" id="filter-select">
+            <option value="todos">Todos</option>
+            <option value="embreve">Em breve</option>
+            <option value="aberto">Abertos</option>
+            <!-- <option value="esgotados">Esgotados</option>
+            <option value="realizados">Realizados</option>
+            <option value="encerrados">Encerrados</option> -->
+          </select>
+        </div>
+      </div>
+      <div class="container-cards">
+        <div class="cards-centauro aberto">
+          <div class="filter-card"></div>
+          <div class="container-image-card">
+            <img src="imagens/banner-card-sao-jose.jpg" alt="" />
+          </div>
+
+          <div class="cards-title">
+            <div class="cards-title-button button-desktop">
+              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <button>Inscreva-se</button>
+              </a>
+              <strong>ABERTO</strong>
+            </div>
+
+            <h3>São José dos Campos · SP</h3>
+            <p class="ponto">Ponto de encontro:</p>
+            <strong class="local">Shopping Vale Sul</strong>
+            <p>18/08 · Domingo</p>
+            <p class="d-km">5KM · 10KM</p>
+            <div class="cards-title-button button-mobile">
+              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <button>Inscreva-se</button>
+              </a>
+              <strong>ABERTO</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-centauro embreve">
+          <div class="filter-card"></div>
+          <div class="container-image-card">
+            <img src="imagens/banner-card-fortaleza.jpg" alt="" />
+          </div>
+          <div class="cards-title">
+            <div class="cards-title-button button-desktop">
+              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <button>Inscreva-se</button>
+              </a> -->
+              <strong>EM BREVE</strong>
+            </div>
+            <h3>Fortaleza · CE</h3>
+            <p class="ponto">Ponto de encontro:</p>
+            <strong class="local">Shopping Iguatemi Bosque</strong>
+            <p>15/09 · Domingo</p>
+            <p class="d-km">5KM · 10KM</p>
+            <div class="cards-title-button button-mobile">
+              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <!-- <button>Inscreva-se</button> -->
+              </a>
+              <strong>EM BREVE</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-centauro embreve">
+          <div class="filter-card"></div>
+          <div class="container-image-card">
+            <img src="imagens/banner-card-goiania.jpg" alt="" />
+          </div>
+
+          <div class="cards-title">
+            <div class="cards-title-button button-desktop">
+              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <button>Inscreva-se</button>
+              </a> -->
+              <strong>EM BREVE</strong>
+            </div>
+
+            <h3>Goiás · Goiânia</h3>
+            <p class="ponto">Ponto de encontro:</p>
+            <strong class="local">Flamboyant Shopping</strong>
+            <p>08/09 · Domingo</p>
+            <p class="d-km">5KM · 10KM</p>
+            <div class="cards-title-button button-mobile">
+              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <!-- <button>Inscreva-se</button> -->
+              </a>
+              <strong>EM BREVE</strong>
+            </div>
+          </div>
+        </div>
+
+        <div class="cards-centauro embreve">
+          <div class="filter-card"></div>
+          <div class="container-image-card">
+            <img src="imagens/banner-card-sp.jpg" alt="" />
+          </div>
+
+          <div class="cards-title">
+            <div class="cards-title-button button-desktop">
+              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <button>Inscreva-se</button>
+              </a> -->
+              <strong>EM BREVE</strong>
+            </div>
+            <h3>São Paulo · SP</h3>
+            <p class="ponto">Ponto de encontro:</p>
+            <strong class="local">Shopping Metrô Itaquera</strong>
+            <p>22/09 · Domingo</p>
+            <p class="d-km">5KM · 10KM</p>
+            <div class="cards-title-button button-mobile">
+              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+                <!-- <button>Inscreva-se</button> -->
+              </a>
+              <strong>EM BREVE</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div id="Patrocinio" class="container-descontos">
+      <h1>DESBRAVA 2024, Conheça tudo que encontrará participando:</h1>
+      <div class="descontos">
+        <div class="image-descontos">
+          <div class="logo-desconto-centauro">
+            <img src="imagens/logo-centauro.svg" alt="">
+          </div>
+          <div class="text-descontos">
+            <strong>CENTAURO </strong>
+            <p>Garanta 15% OFF na Centauro em produtos da lista.</p>
+          </div>
+        </div>
+        <div class="image-descontos">
+          <div class="logo-desconto-nike">
+            <img src="imagens/logo-nike.svg" alt="">
+          </div>
+          <div class="text-descontos">
+            <strong>NIKE </strong>
+            <p>Retire o Kit na Centauro e ganhe desconto especial em produtos da marca!</p>
+          </div>
+        </div>
+        <a class="site-spoint" target="_blank" href="https://spoint.onelink.me/M2OO/umpluxml?af_qr=true?utm_source=spoint&utm_medium=centaurodesbrava&utm_campaign=centaurodesbravaLP&af_viewthrough_lookback=1h&source_caller=api&is_retargeting=true&pid=spoint&af_channel=centaurodesbrava&c=centaurodesbravaLP ">
+          <div class="image-descontos">
+            <div class="logo-desconto-spoint">
+              <img class="spoint" src="imagens/logo-spoint.svg" alt="">
+            </div>
+            <div class="text-descontos">
+              <strong class="link-spoint">SPOINT </strong>
+              <p>Sua corrida vale dinheiro na Centauro</p>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+    <footer>
+      <h2>PATROCINADORES</h2>
+      <p>Descubra seu corre movendo-se pelo Brasil.</p>
+      <div class="logo-footer">
+        <img src="imagens/logo-centauro-footer.svg" alt="">
+        <img class="nike" src="imagens/logo-nike-footer.svg" alt="">
+      </div>
+      <!-- <h2>APOIADORES</h2>
+      <p>Descubra seu corre movendo-se pelo Brasil.</p>
+      <div class="logo-footer">
+        <img src="imagens/logo-centauro-footer.svg" alt="">
+        <img class="nike" src="imagens/logo-nike-footer.svg" alt="">
+      </div> -->
+      <div class="ticket">
+        <a target="_blank" href="https://www.instagram.com/centauroesporte/"><img src="imagens/Instagram_black.svg" alt=""></a>
+        <p>© 2024 - TICKET AGORA SERVICOS DE RESERVAS, INTERMEDIAÇÃO E AGENCIAMENTO LTDA.  <a target="_blank" href="https://www.ticketsports.com.br/"> VISITE NOSSO SITE</a>
+        </p>
+      </div>
+    </footer>
+    <script>
+      window.addEventListener("scroll", function () {
+        const header = document.querySelector("nav");
+        if (window.scrollY > 50) {
+          header.classList.add("scrolled");
+        } else {
+          header.classList.remove("scrolled");
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', () => {
+  const buttons = document.querySelectorAll('.circuitos-button button');
+  const select = document.getElementById('filter-select');
+  const cards = document.querySelectorAll('.cards-centauro');
+
+  function filterCards(filter) {
+    cards.forEach(card => {
+      if (filter === 'todos') {
+        card.style.display = '';
+      } else {
+        card.classList.contains(filter) ? card.style.display = '' : card.style.display = 'none';
+      }
+    });
+  }
+
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const filter = button.getAttribute('data-filter');
+      filterCards(filter);
+      buttons.forEach(btn => btn.classList.remove('button-selected'));
+      button.classList.add('button-selected');
+    });
+  });
+
+  select.addEventListener('change', () => {
+    const filter = select.value;
+    filterCards(filter);
+  });
+  filterCards('todos');
+});
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,747 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Rubik", sans-serif;
+}
+.scrolled{
+    background-color: #000000;
+}
+header{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+header nav{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    padding: 29px 0px;
+    justify-content: center;
+    position: fixed;
+    color: #FFF;
+    top: 0;
+    z-index: 100;
+}
+
+header nav a{
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 24px;
+    font-size: 14px;
+}
+.container-inicio{
+    width: 100%;
+    max-width: 1440px;    
+    background-color: #E30000;
+    background: url(imagens/banner-inicio.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+    height: 750px;
+}
+.filter{
+    position: absolute;
+    width: 100%;
+    background: black;
+    height: 800px;
+    opacity: 0.5;
+}
+.desbrava-desktop{
+    margin-top: 50px;
+}
+.desbrava-mobile{
+    display: none;
+}
+.background-inicio-logo{
+    width: 100%;
+    height: 85%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    z-index: 10;
+}
+.background-inicio-logo img{
+    width: 100%;
+    max-width: 625px;
+}
+.inicio-mobile{
+    display: none;
+}
+.background-inicio{
+    background: url(imagens/background-inicio.svg);
+    height: 750px;
+    background-repeat: no-repeat;
+    width: 10.5%;
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.background-inicio-texto{
+    width: 85%;
+    color: #FFF;    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.background-inicio-texto h1{
+    font-size: 32px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.background-inicio-texto p{
+    margin: 16px auto auto auto;
+    font-size: 18px;
+}
+.line{
+    width: 130px;
+    height: 4px;
+    border-radius: 100px;
+    opacity: 0.32px;
+    background-color: #FFF;
+    margin-bottom: 16px;
+    opacity: 32%;
+}
+.container-projeto{
+    width: 100%;
+    max-width: 1296px;
+    height: 353px;
+    margin-top: 64px;
+    border-radius: 16px;
+    color: #FFF;
+    display: flex;    
+    background-size: cover;
+    position: relative;
+    background-color: #000000;
+}
+.filter-background{
+    width: 1296px;
+    height: 353px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.8;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.64) 100%);
+}
+.filter-play{
+    position: absolute;
+    width: 100%;
+    height: 353px;
+    max-height: 353px;
+}
+.filter-play img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.wrapper-projeto{
+    z-index: 1;
+    width: 60%;
+    padding: 32px 32px 32px 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.wrapper-projeto h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0px 0px 8px 0px;
+}
+.wrapper-projeto p{
+    margin: 8px 0px;
+}
+.wrapper-projeto strong{
+    margin: 8px 0px 0px 0px;
+}
+.wrapper-play{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+.wrapper-play div{    
+    border: 1px solid #FFFFFF29;
+    width: 581px;
+    height: 290px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-circuitos{
+    width: 100%;
+    max-width: 1296px; 
+    margin: 64px 0px;
+}
+.container-circuitos .circuitos{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.circuitos h2{
+    margin: 0px;
+    font-size: 32px;
+}
+.circuitos-title p{
+    margin: 16px 0px 0px 0px;
+    font-size: 16px;
+    color: #465A64;
+}
+.circuitos-select-mobile{
+    display: none;
+}
+.circuitos-button{
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.circuitos-button button{    
+    padding: 16px 24px;
+    color: #060606;
+    margin-right: 8px;
+    background-color: transparent;
+    border: none;
+    font-weight: 500;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+.circuitos-button .button-selected{
+    background-color: #060606;
+    color: #FFF;
+    border-radius: 8px;
+}
+.container-cards{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+.cards-centauro{
+    width: 300px;
+    height: 427px;
+    border-radius: 16px;
+    margin-top: 40px;
+    position: relative;
+    margin-right: 32px;
+}
+.cards-centauro img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+}
+.container-image-card{
+    height: 100%;
+}
+.button-desativado{
+    color: #00000069 !important;
+}
+
+/* Esgotado */
+.container-cards .esgotado img{
+    filter: grayscale(100%);
+}
+.esgotado .cards-title button{
+    background-color: #000000;
+}
+
+ /* Realizado */
+.container-cards .realizado img{
+    filter: grayscale(100%);
+}
+.realizado .cards-title button{
+    background-color: #000000;
+}
+
+/* Encerrado */
+.container-cards .encerrado{
+    border: 2px solid #1DBE24;
+}
+.container-cards .encerrado img{
+    filter: grayscale(100%);
+}
+.encerrado .cards-title button{
+    background-color: #1DBE24;
+}
+.cards-title{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: #FFF;
+    background: url(imagens/filter-event.png) no-repeat;
+    background-size: cover;
+    border-radius: 0px 0px 16px 16px;
+}
+.filter-card{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: black;
+    border-radius: 16px;
+    opacity: 0.4;
+}
+.cards-title-button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-mobile{
+    display: none;
+}
+.cards-title-button button{
+    border: none;
+    background-color: #E30000;
+    color: #FFF;
+    width: 182px;
+    height: 48px;    
+    font-family: "Rubik", sans-serif;
+    font-weight: 500;
+    border-radius: 8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+.cards-title-button button:hover{
+    box-shadow: 0px 1px 12px 0px #0000007A;
+}
+.cards-title-button strong{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.59px;
+}
+.cards-title h3{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 8px;
+    margin: 20px 0px 8px 0px;
+}
+.ponto{
+    font-size: 14px;
+}
+.local{
+    font-size: 16px !important;
+}
+.cards-title p{
+    margin: 8px 0px;
+    font-size: 16px;
+}
+.d-km{
+    margin-bottom: 24px !important;
+    color: #8C9BA5;
+}
+.container-descontos{
+    background-color: #F3F3F3;
+    width: calc(100% - 144px);
+    max-width: calc(1440px - 144px);
+    padding: 64px 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-descontos h1{
+    margin: 0px 0px 40px 0px;
+    font-size: 32px;
+    width: 50%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.container-descontos p{
+    margin: 4px 0px 8px 0px;
+}
+.descontos{
+    display: flex;
+}
+.image-descontos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 250px;
+    text-align: center;        
+    margin: 0px 32px 0px 32px;
+}
+.logo-desconto-centauro{
+    background-color: #E30000;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.logo-desconto-nike{
+    background-color: #111111;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.logo-desconto-spoint{
+    background-color: #FFD600;
+    width: 80px;
+    height: 80px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.text-descontos strong{
+    font-size: 18px;
+}
+.text-descontos p{
+    font-size: 16px;
+}
+footer{
+    width: 100%;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    color: #FFF;
+}
+footer h2{
+    font-size: 32px;
+    margin: 80px 0px 16px 0px;
+}
+footer p{
+    font-size: 16px;
+    margin: 0;
+}
+.logo-footer{
+    margin: 40px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 635px;
+    justify-content: space-between;
+}
+.ticket img{
+    margin-bottom: 26px;
+}
+.ticket{
+    padding: 32px 0px 24px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    width: 100%;
+    font-size: 14px;
+}
+.ticket p{
+    font-size: 14px;
+}
+.ticket a{
+    text-decoration: underline;
+    color: #FFF;
+
+}
+.site-spoint{
+    text-decoration: none;
+    color: #000000;
+}
+.link-spoint{
+    text-decoration: underline;
+}
+@media (max-width: 768px){
+    header nav{
+        overflow-x: scroll;
+        justify-content: center;
+    }
+    header nav a:first-child{
+        margin-left: 24px;
+    }
+    .background-inicio-logo{
+        width: calc(100% - 40px);
+        padding: 106px 20px 0px 20px;
+        justify-content: space-around;
+        align-items: center;
+        height: 75%;
+    }
+    .container-inicio{
+        flex-direction: column;
+        background-position-x: 60%;
+        height: 600px;
+    }
+    .background-inicio-logo .desbrava-mobile{
+        display: flex;
+        max-width: 300px;
+    }
+    .image-mobile{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-mobile .desbrava-nike{
+        margin-top: 24px;
+        width: 60% !important;
+    }
+    .desbrava-desktop{
+        display: none;
+    }
+    .background-inicio{
+        background:none;
+    }
+    .background-inicio-texto{
+        width: 100%;
+        text-align: center;
+    }
+    .background-inicio-texto h1 {
+        font-size: 20px;
+    }
+    .background-inicio-texto p {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .inicio-mobile{
+        display: flex;
+    }
+    .image-inicio-desktop{
+        display: none;
+    }
+    .wrapper-projeto {
+        width: calc(100% - 48px);
+        padding: 32px 16px 24px 16px;
+    }
+    .wrapper-projeto h2{
+        margin: 0px 0px 16px 0px;
+        font-size: 24px;
+    }
+    .wrapper-projeto p{
+        font-size: 16px;
+    }
+    .container-circuitos .circuitos {
+        flex-direction: column;
+    }
+    .circuitos-button{
+        display: none;
+    }
+    .circuitos-select-mobile{
+        display: flex;
+    }
+    .container-projeto{
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: fit-content;
+        border-radius: 0px;
+        margin-top: 0px;
+    }
+    .filter-background{
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+    }
+    .filter-play{
+        height: 100%;
+        max-height: 100%;
+    }
+    .filter-play img{
+        border-radius: 0;
+    }
+    .wrapper-play {
+        width: calc(100% - 40px);
+        margin: auto auto 24px auto;
+    }
+    .wrapper-play div{
+        height: auto;
+    }
+    .wrapper-play div img{
+        margin: 24px 0px;
+    }
+    .container-circuitos{
+        margin: 64px 0px 24px 0px;
+    }
+    .container-circuitos .circuitos{
+        width: calc(100% - 40px);
+        margin: auto;
+    }
+    .circuitos-select-mobile{
+        width: 100%;
+        margin-top: 24px;
+    }
+    .circuitos h2 {
+        font-size: 24px;
+    }
+    .circuitos-select-mobile select{
+        width: 100%;
+        padding: 16px;
+        border-radius: 8px;
+        border: 1px solid #000000;
+        font-family: "Rubik", sans-serif;
+        font-weight: 600;
+    }
+    .cards-centauro{
+        display: flex;
+        align-items: center;
+        height: auto;
+        padding: 16px;
+        width: calc(100% - 32px);
+        border-top: 1px solid #00000029;
+        border-radius: 0;
+        margin: 0;
+    }
+    .cards-centauro img{
+        width: 110px;
+        height: 110px;
+        border-radius: 4px;
+        object-fit: cover;
+    }
+    .d-km {
+        margin-bottom: 0px !important;
+    }
+    .cards-title{
+        position: inherit;
+        background: none;
+        color: #000000;
+        align-items: flex-start;
+        margin-left: 18px;
+    }
+    .cards-title-button{
+        flex-direction: row;
+    }
+    .cards-title-button button{
+        width: 96px;
+        height: 32px;
+        font-size: 12px;
+        border-radius: 4px;        
+        margin-bottom: 0px;
+    }
+    .cards-title h3 {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 23px;
+        margin: 4px 0px;
+    }
+    .cards-title p{
+        font-size: 14px;
+        margin: 2px 0px;
+    }
+    .button-mobile{
+        display: flex;
+        margin-top: 6px;
+        align-items: center;
+        justify-content: center;
+    }
+    .button-mobile strong{
+        margin-left: 8px;
+        background-color: #D9D9D9;
+        padding: 9px;
+        border-radius: 4px;
+        font-weight: 600;
+    }
+    .button-desktop{
+        display: none;
+    }
+    .container-cards{        
+    flex-wrap: wrap;
+    }
+    .filter-card{
+        display: none;
+    }
+    .container-image-card{
+        width: 110px;
+        height: 110px;
+        border-radius: 4px;
+    }
+    .container-cards .encerrado{
+        border-top: 1px solid #00000029;
+        border-right: transparent;
+        border-bottom: transparent;
+        border-left: transparent;
+    }
+    .container-cards .encerrado .container-image-card{
+        border: 2px solid #1DBE24;
+    }
+    .encerrado .cards-title button{
+        background-color: #1DBE24;
+    }
+    .container-descontos{
+        width: calc(100% - 32px);
+        padding: 32px 16px;
+    }
+    .container-descontos h1{
+        width: 100%;
+        font-size: 18px;
+        text-align: left;
+    }
+    .descontos{
+        flex-direction: column;
+        width: 100%;
+    }
+    .spoint{
+        width: 70% !important;
+    }
+    .image-descontos{
+        display: flex;
+        flex-direction: row;  
+        margin: 0;  
+        max-width: 100%;
+    }
+    .image-descontos .logo-desconto-centauro, .logo-desconto-nike, .logo-desconto-spoint{
+        width: 64px;
+        height: 64px;
+    }
+    .image-descontos img{
+        width: 80%;
+    }
+    .image-descontos .text-descontos{
+        width: 75%;
+        text-align: left;
+        margin-left: 16px;
+    }
+    footer p{
+        padding: 0px 16px;
+    }
+    footer h2 {
+        margin: 32px 0px 16px 0px;
+        font-size: 24px;
+    }
+    .logo-footer{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo-footer .nike{
+        margin-top: 40px;
+        max-width: 173px;
+    }
+    .logo-footer img{
+        width: 80%;
+    }
+    .ticket{
+        width: calc(100% - 32px);
+        padding: 16px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+}
