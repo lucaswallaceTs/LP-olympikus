@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <title>Centauro</title>
+    <title>Olympikus 50 Anos</title>
   </head>
   <body>
     <header>
@@ -24,36 +24,38 @@
     <div class="container-inicio" id="Inicio">
       <div class="filter"></div>
       <div class="background-inicio-logo">
-        <img class="desbrava-desktop" src="imagens/logo-desbrava.svg" alt="" />
-        <div class="image-mobile">
-          <img class="desbrava-mobile" src="imagens/logo-desbrava-mobile.svg" alt="">
-          <img class="desbrava-mobile desbrava-nike" src="imagens/logo-nike-mobile.svg" alt="">
-        </div>
+        <img class="olympikus-desktop" src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/logo-oly.svg" alt="" />
+
         <div class="background-inicio-texto">
           <div class="line"></div>
-          <h1>Descubra seu corre por percursos inéditos pelo Brasil!</h1>
-          <p>A Centauro estará em 10 circuitos inéditos de corrida de rua.</p>
+          <h1>Em 2025, a Olympikus completa 50 anos.</h1>
+          <p>
+            Nada melhor do que chegar nessa data vivendo nosso maior momento. Se
+            hoje somos a maior marca esportiva brasileira, é porque sempre
+            acreditamos que era possível tornar a tecnologia esportiva acessível
+            no Brasil.
+          </p>
         </div>
       </div>
-      <div class="background-inicio"></div>
     </div>
     <div class="container-projeto" id="Sobre">
       <div class="filter-background"></div>
       <div class="filter-play">
-        <img src="imagens/banner-play.jpg" alt="" />
+        <img src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/banner-play.jpg" alt="" />
       </div>
       <div class="wrapper-projeto">
         <h2>SOBRE O PROJETO</h2>
         <p>
-          A Centauro e a Nike se juntaram para mostrar que corrida não é somente um esporte, mas um estilo de vida. 
+          E para marcar essa historia, nada mais justo que comemorar do jeito
+          que a gente gosta: correndo. Esse é nosso convite. Uma celebração com
+          50 corridas, de norte a sul do Brasil.
         </p>
-        <p>Te convidamos a descobrir seu corre de rua por percursos inéditos presentes pelo Brasil.</p> 
-          <strong>Vamos desbravar juntos?</strong>
+        <strong>Imagina não fazer parte dessa festa?</strong>
       </div>
       <div class="wrapper-play">
         <div>
           <a target="_blank" href="https://www.youtube.com/watch?v=sIfSLZYX5Q8">
-            <img src="imagens/logo-play.svg" alt="" />
+            <img src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/logo-play.svg" alt="" />
           </a>
         </div>
       </div>
@@ -61,193 +63,1266 @@
     <div class="container-circuitos" id="Eventos">
       <div class="circuitos">
         <div class="circuitos-title">
-          <h2>DESBRAVA 2024</h2>
-          <p>
-            Percursos inéditos, kits exclusivos, benefícios e muito mais!
-          </p>
+          <h2>CALENDÁRIO 2025</h2>
+          <p>Percursos inéditos, kits exclusivos, benefícios e muito mais!</p>
         </div>
+        <!-- Botão para seleção do status -->
+         <!-- isso aqui é um botão desativado: 
+          <button class="button-desativado" disabled>Em breve</button> 
+          
+          isso aqui é um botão ativo:
+          <button data-filter="aberto">Abertos</button>
+
+          para ativar, só copiar acima e mudar o data filter para o status que deseja
+
+          No mobile na linha 88, só descomentar o botão que deseja ativar
+          -->
         <div class="circuitos-button">
           <button class="button-selected" data-filter="todos">Todos</button>
-          <button data-filter="embreve">Em breve</button>
           <button data-filter="aberto">Abertos</button>
-          <button class="button-desativado" disabled>Esgotados</button>
+          <button data-filter="esgotados">Esgotados</button>
+          <button data-filter="embreve">Em breve</button>
           <button class="button-desativado" disabled>Realizados</button>
           <button class="button-desativado" disabled>Encerrados</button>
         </div>
         <div class="circuitos-select-mobile">
           <select name="" id="filter-select">
             <option value="todos">Todos</option>
-            <option value="embreve">Em breve</option>
+            
             <option value="aberto">Abertos</option>
-            <!-- <option value="esgotados">Esgotados</option>
+            <option value="esgotados">Esgotados</option>
+            <option value="embreve">Em breve</option>
+            <!-- 
+            
             <option value="realizados">Realizados</option>
             <option value="encerrados">Encerrados</option> -->
           </select>
         </div>
       </div>
-      <div class="container-cards">
-        <div class="cards-centauro aberto">
-          <div class="filter-card"></div>
+      <div class="container-cards">        
+        <!-- Na classe coloca o status: aberto/ embreve/ esgotado ou encerrado -->
+        <div class="cards-oly esgotados">
           <div class="container-image-card">
-            <img src="imagens/banner-card-sao-jose.jpg" alt="" />
+            <!-- imagem do evento -->
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/card-cipo.png"
+              alt=""
+            />
           </div>
 
           <div class="cards-title">
-            <div class="cards-title-button button-desktop">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>Inscreva-se</button>
-              </a>
-              <strong>ABERTO</strong>
-            </div>
+            <!-- Cidade e estado e a data logo embaixo -->
+            <h3>SERRA DO CIPÓ – MG</h3>
+            <p>21 e 22/03</p>
 
-            <h3>São José dos Campos · SP</h3>
-            <p class="ponto">Ponto de encontro:</p>
-            <strong class="local">Shopping Vale Sul</strong>
-            <p>18/08 · Domingo</p>
-            <p class="d-km">5KM · 10KM</p>
+            <!-- 
+            Botão do card, acompanha o status: 
+            aberto = inscreva-se
+            esgotado = esgotado
+            encerrado = encerrado
+            Em breve = Em breve
+            Se for qualquer outro a não ser o inscreva-se, tira o link do href, para não redirecionar para nenhum lugar -->
             <div class="cards-title-button button-mobile">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>Inscreva-se</button>
+              <a
+                target="_blank"
+                href="https://site.ticketsports.com.br/Inscricao/categoria.aspx?__idEvento=70765"
+              >
+                <button>Esgotado</button>
               </a>
-              <strong>ABERTO</strong>
+            </div>
+            <!-- 
+            Aqui onde tem o botão para desktop, mesma ideia do mobile -->
+            <div class="cards-title-button button-desktop">
+              <a
+                target="_blank"
+                href="https://site.ticketsports.com.br/Inscricao/categoria.aspx?__idEvento=70765"
+              >
+                <button>Esgotado</button>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="cards-centauro embreve">
-          <div class="filter-card"></div>
+        <div class="cards-oly aberto">
           <div class="container-image-card">
-            <img src="imagens/banner-card-fortaleza.jpg" alt="" />
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/Maratona-de-Sao-Paulo.jpeg"
+              alt=""
+            />
           </div>
           <div class="cards-title">
-            <div class="cards-title-button button-desktop">
-              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>Inscreva-se</button>
-              </a> -->
-              <strong>EM BREVE</strong>
-            </div>
-            <h3>Fortaleza · CE</h3>
-            <p class="ponto">Ponto de encontro:</p>
-            <strong class="local">Shopping Iguatemi Bosque</strong>
-            <p>15/09 · Domingo</p>
-            <p class="d-km">5KM · 10KM</p>
+            <h3>MARATONA INTERNACIONAL DE SÃO PAULO</h3>
+            <p>06 de Abril</p>
             <div class="cards-title-button button-mobile">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <!-- <button>Inscreva-se</button> -->
+              <a
+                target="_blank"
+                href="https://www.yescom.com.br/maratonasp/2025/index.asp"
+              >
+                <button>Inscreva-se</button>
               </a>
-              <strong>EM BREVE</strong>
+            </div>
+            <div class="cards-title-button button-desktop">
+              <a
+                target="_blank"
+                href="https://www.yescom.com.br/maratonasp/2025/index.asp"
+              >
+                <button>Inscreva-se</button>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="cards-centauro embreve">
-          <div class="filter-card"></div>
+        <div class="cards-oly aberto">
           <div class="container-image-card">
-            <img src="imagens/banner-card-goiania.jpg" alt="" />
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/Logo-Maratona-de-Porto-Alegre.png"
+              alt=""
+            />
           </div>
 
           <div class="cards-title">
-            <div class="cards-title-button button-desktop">
-              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
+            <h3>40ª MARATONA INTERNACIONAL DE PORTO ALEGRE - 2025</h3>
+            <p>07 e 08 de Junho</p>
+            <div class="cards-title-button button-mobile">
+              <a
+                target="_blank"
+                href="https://www.ticketsports.com.br/e/40-maratona-internacional-de-porto-alegre---2025-70674"
+              >
                 <button>Inscreva-se</button>
-              </a> -->
-              <strong>EM BREVE</strong>
+              </a>
             </div>
 
-            <h3>Goiás · Goiânia</h3>
-            <p class="ponto">Ponto de encontro:</p>
-            <strong class="local">Flamboyant Shopping</strong>
-            <p>08/09 · Domingo</p>
-            <p class="d-km">5KM · 10KM</p>
-            <div class="cards-title-button button-mobile">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <!-- <button>Inscreva-se</button> -->
+            <div class="cards-title-button button-desktop">
+              <a
+                target="_blank"
+                href="https://www.ticketsports.com.br/e/40-maratona-internacional-de-porto-alegre---2025-70674"
+              >
+                <button>Inscreva-se</button>
               </a>
-              <strong>EM BREVE</strong>
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly aberto">
+          <div class="container-image-card">
+            
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/maratona-de-salvador.png"
+              alt=""
+              class="border-cards"
+            />
+          </div>
+          <div class="cards-title">
+            <h3>MARATONA DE SALVADOR</h3>
+            <p>20 e 21 de Setembro</p>
+            <div class="cards-title-button button-mobile">
+              <a
+                target="_blank"
+                href="https://www.ticketsports.com.br/e/maratona-salvador-2025-70117"
+              >
+                <button>Inscreva-se</button>
+              </a>
+            </div>
+            <div class="cards-title-button button-desktop">
+              <a
+                target="_blank"
+                href="https://www.ticketsports.com.br/e/maratona-salvador-2025-70117"
+              >
+                <button>Inscreva-se</button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly aberto">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/maratona-de-salvador.png"
+              alt=""
+              class="border-cards"
+            />
+          </div>
+          <div class="cards-title">
+            <h3>MEIA MARATONA DE SALVADOR</h3>
+            <p>20 e 21 de Setembro</p>
+            <div class="cards-title-button button-mobile">
+              <a
+                target="_blank"
+                href="https://www.ticketsports.com.br/e/maratona-salvador-2025-70117"
+              >
+                <button>Inscreva-se</button>
+              </a>
+            </div>
+            <div class="cards-title-button button-desktop">
+              <a
+                target="_blank"
+                href="https://www.ticketsports.com.br/e/maratona-salvador-2025-70117"
+              >
+                <button>Inscreva-se</button>
+              </a>
             </div>
           </div>
         </div>
 
-        <div class="cards-centauro embreve">
-          <div class="filter-card"></div>
+        <div class="cards-oly esgotados">
           <div class="container-image-card">
-            <img src="imagens/banner-card-sp.jpg" alt="" />
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/card-cumbuco.png"
+              alt=""
+            />
           </div>
-
           <div class="cards-title">
-            <div class="cards-title-button button-desktop">
-              <!-- <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <button>Inscreva-se</button>
-              </a> -->
-              <strong>EM BREVE</strong>
-            </div>
-            <h3>São Paulo · SP</h3>
-            <p class="ponto">Ponto de encontro:</p>
-            <strong class="local">Shopping Metrô Itaquera</strong>
-            <p>22/09 · Domingo</p>
-            <p class="d-km">5KM · 10KM</p>
+            <h3>BOTA PRA CORRER - CUMBUCO</h3>
+            <p>21 e 22 de Novembro</p>
             <div class="cards-title-button button-mobile">
-              <a target="_blank" href="https://lucaswallacets.github.io/evento-centauro/index.html">
-                <!-- <button>Inscreva-se</button> -->
+              <a
+                target="_blank"
+                href="https://site.ticketsports.com.br/Inscricao/categoria.aspx?__idEvento=70774"
+              >
+                <button>Esgotado</button>
               </a>
-              <strong>EM BREVE</strong>
+            </div>
+            <div class="cards-title-button button-desktop">
+              <a
+                target="_blank"
+                href="https://site.ticketsports.com.br/Inscricao/categoria.aspx?__idEvento=70774"
+              >
+                <button>Esgotado</button>
+              </a>
             </div>
           </div>
         </div>
+
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">              
+                <button>Em Breve</button>
+            </div>
+            <div class="cards-title-button button-desktop">
+                <button>Em Breve</button>
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+        <div class="cards-oly embreve">
+          <div class="container-image-card">
+            <img
+              src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/em-breve-image.jpg"
+              alt=""
+            />
+          </div>
+
+          <div class="cards-title">
+            <h3>EM BREVE</h3>
+            <p>a definir</p>
+            <div class="cards-title-button button-mobile">
+
+                <button>Em Breve</button>
+
+            </div>
+            <div class="cards-title-button button-desktop">
+
+                <button>Em Breve</button>
+
+            </div>
+          </div>
+        </div>
+       
+
+        
       </div>
-      
     </div>
-    <div id="Patrocinio" class="container-descontos">
-      <h1>DESBRAVA 2024, Conheça tudo que encontrará participando:</h1>
-      <div class="descontos">
-        <div class="image-descontos">
-          <div class="logo-desconto-centauro">
-            <img src="imagens/logo-centauro.svg" alt="">
-          </div>
-          <div class="text-descontos">
-            <strong>CENTAURO </strong>
-            <p>Garanta 15% OFF na Centauro em produtos da lista.</p>
-          </div>
-        </div>
-        <div class="image-descontos">
-          <div class="logo-desconto-nike">
-            <img src="imagens/logo-nike.svg" alt="">
-          </div>
-          <div class="text-descontos">
-            <strong>NIKE </strong>
-            <p>Retire o Kit na Centauro e ganhe desconto especial em produtos da marca!</p>
-          </div>
-        </div>
-        <a class="site-spoint" target="_blank" href="https://spoint.onelink.me/M2OO/umpluxml?af_qr=true?utm_source=spoint&utm_medium=centaurodesbrava&utm_campaign=centaurodesbravaLP&af_viewthrough_lookback=1h&source_caller=api&is_retargeting=true&pid=spoint&af_channel=centaurodesbrava&c=centaurodesbravaLP ">
-          <div class="image-descontos">
-            <div class="logo-desconto-spoint">
-              <img class="spoint" src="imagens/logo-spoint.svg" alt="">
-            </div>
-            <div class="text-descontos">
-              <strong class="link-spoint">SPOINT </strong>
-              <p>Sua corrida vale dinheiro na Centauro</p>
-            </div>
-          </div>
-        </a>
-      </div>
-
-    </div>
-    <footer>
+    <footer id="Patrocinio">
       <h2>PATROCINADORES</h2>
       <p>Descubra seu corre movendo-se pelo Brasil.</p>
       <div class="logo-footer">
-        <img src="imagens/logo-centauro-footer.svg" alt="">
-        <img class="nike" src="imagens/logo-nike-footer.svg" alt="">
+        <img src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/logo-oly.svg" alt="" />
       </div>
       <!-- <h2>APOIADORES</h2>
       <p>Descubra seu corre movendo-se pelo Brasil.</p>
       <div class="logo-footer">
-        <img src="imagens/logo-centauro-footer.svg" alt="">
-        <img class="nike" src="imagens/logo-nike-footer.svg" alt="">
+        <img src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/logo-oly-footer.svg" alt="">
+        <img class="nike" src="https://cdn.ticketsports.com.br/ticketagora/site/Olympikus-2025/logo-nike-footer.svg" alt="">
       </div> -->
       <div class="ticket">
-        <a target="_blank" href="https://www.instagram.com/centauroesporte/"><img src="imagens/Instagram_black.svg" alt=""></a>
-        <p>© 2024 - TICKET AGORA SERVICOS DE RESERVAS, INTERMEDIAÇÃO E AGENCIAMENTO LTDA.  <a target="_blank" href="https://www.ticketsports.com.br/"> VISITE NOSSO SITE</a>
+        <p>
+          © 2025 - TICKET AGORA SERVICOS DE RESERVAS, INTERMEDIAÇÃO E
+          AGENCIAMENTO LTDA.
+          <a target="_blank" href="https://www.ticketsports.com.br/">
+            VISITE NOSSO SITE</a
+          >
         </p>
       </div>
     </footer>
@@ -261,37 +1336,38 @@
         }
       });
 
-      document.addEventListener('DOMContentLoaded', () => {
-  const buttons = document.querySelectorAll('.circuitos-button button');
-  const select = document.getElementById('filter-select');
-  const cards = document.querySelectorAll('.cards-centauro');
+      document.addEventListener("DOMContentLoaded", () => {
+        const buttons = document.querySelectorAll(".circuitos-button button");
+        const select = document.getElementById("filter-select");
+        const cards = document.querySelectorAll(".cards-oly");
 
-  function filterCards(filter) {
-    cards.forEach(card => {
-      if (filter === 'todos') {
-        card.style.display = '';
-      } else {
-        card.classList.contains(filter) ? card.style.display = '' : card.style.display = 'none';
-      }
-    });
-  }
+        function filterCards(filter) {
+          cards.forEach((card) => {
+            if (filter === "todos") {
+              card.style.display = "";
+            } else {
+              card.classList.contains(filter)
+                ? (card.style.display = "")
+                : (card.style.display = "none");
+            }
+          });
+        }
 
-  buttons.forEach(button => {
-    button.addEventListener('click', () => {
-      const filter = button.getAttribute('data-filter');
-      filterCards(filter);
-      buttons.forEach(btn => btn.classList.remove('button-selected'));
-      button.classList.add('button-selected');
-    });
-  });
+        buttons.forEach((button) => {
+          button.addEventListener("click", () => {
+            const filter = button.getAttribute("data-filter");
+            filterCards(filter);
+            buttons.forEach((btn) => btn.classList.remove("button-selected"));
+            button.classList.add("button-selected");
+          });
+        });
 
-  select.addEventListener('change', () => {
-    const filter = select.value;
-    filterCards(filter);
-  });
-  filterCards('todos');
-});
-
+        select.addEventListener("change", () => {
+          const filter = select.value;
+          filterCards(filter);
+        });
+        filterCards("todos");
+      });
     </script>
   </body>
 </html>

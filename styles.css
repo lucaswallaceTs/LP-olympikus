@@ -9,7 +9,10 @@ body{
     font-family: "Rubik", sans-serif;
 }
 .scrolled{
-    background-color: #000000;
+    background-color: #fff;
+}
+.scrolled a{
+    color: #000000;
 }
 header{
     width: 100%;
@@ -24,60 +27,60 @@ header nav{
     padding: 29px 0px;
     justify-content: center;
     position: fixed;
-    color: #FFF;
+    color: #060606;
     top: 0;
     z-index: 100;
 }
 
 header nav a{
-    color: #FFF;
+    color: #fff;
     text-decoration: none;
+    text-transform: none;
     margin-right: 24px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
 }
 .container-inicio{
     width: 100%;
     max-width: 1440px;    
     background-color: #E30000;
-    background: url(imagens/banner-inicio.jpg);
+    background: url(imagens/banner-inicio.png);
     background-size: cover;
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     position: relative;
     height: 750px;
 }
 .filter{
     position: absolute;
     width: 100%;
-    background: black;
-    height: 800px;
-    opacity: 0.5;
+    background: url(imagens/background-inicio.png);
+    height: 100%;
+    opacity: 85%;
 }
-.desbrava-desktop{
+.olympikus-desktop{
     margin-top: 50px;
 }
-.desbrava-mobile{
+.olympikus-mobile{
     display: none;
 }
 .background-inicio-logo{
     width: 100%;
-    height: 85%;
     display: flex;
-    justify-content: space-around;
     flex-direction: column;
     align-items: center;
     z-index: 10;
 }
 .background-inicio-logo img{
     width: 100%;
-    max-width: 625px;
+    max-width: 330px;
+    margin-bottom: 56px;
 }
 .inicio-mobile{
     display: none;
 }
 .background-inicio{
-    background: url(imagens/background-inicio.svg);
     height: 750px;
     background-repeat: no-repeat;
     width: 10.5%;
@@ -88,12 +91,13 @@ header nav a{
     justify-content: flex-end;
 }
 .background-inicio-texto{
-    width: 85%;
+    width: 55%;
     color: #FFF;    
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 .background-inicio-texto h1{
     font-size: 32px;
@@ -103,7 +107,10 @@ header nav a{
 }
 .background-inicio-texto p{
     margin: 16px auto auto auto;
-    font-size: 18px;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 22px;
 }
 .line{
     width: 130px;
@@ -127,13 +134,16 @@ header nav a{
     background-color: #000000;
 }
 .filter-background{
-    width: 1296px;
+    width: calc(100% - 32px);
+    padding: 0px 16px;
+    max-width: 1296px;
     height: 353px;
     position: absolute;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 1;
     border-radius: 16px;
-    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.64) 100%);
+    background: linear-gradient(90deg, #2735D4 25%, #2735D41A 100%);
+
 }
 .filter-play{
     position: absolute;
@@ -196,6 +206,7 @@ header nav a{
 .circuitos h2{
     margin: 0px;
     font-size: 32px;
+    color: #2735D4;
 }
 .circuitos-title p{
     margin: 16px 0px 0px 0px;
@@ -222,117 +233,134 @@ header nav a{
     cursor: pointer;
 }
 .circuitos-button .button-selected{
-    background-color: #060606;
+    background-color: #2735D4;
     color: #FFF;
     border-radius: 8px;
 }
-.container-cards{
+.container-cards {
     display: flex;
     justify-content: flex-start;
     width: 100%;
+    flex-wrap: wrap;
 }
-.cards-centauro{
+
+.cards-oly {
     width: 300px;
-    height: 427px;
     border-radius: 16px;
     margin-top: 40px;
-    position: relative;
-    margin-right: 32px;
+    margin-right: 24px;
+
 }
-.cards-centauro img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 16px;
+    .cards-oly img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+        border-radius: 16px 16px 0px 0px;
+    }
+    .border-cards{
+        border-top: 1px solid #00000029;
+        border-right: 1px solid #00000029;
+        border-left: 1px solid #00000029;
+        border-bottom: 0px;
+        box-sizing: border-box;
+    }
+
+.container-image-card {
+    width: 300px;
+    height: 70%;
+    max-height: 300px;
 }
-.container-image-card{
-    height: 100%;
-}
-.button-desativado{
+
+.button-desativado {
     color: #00000069 !important;
 }
 
 /* Esgotado */
-.container-cards .esgotado img{
+.container-cards .esgotado img {
     filter: grayscale(100%);
 }
-.esgotado .cards-title button{
+
+.esgotado .cards-title button {
     background-color: #000000;
 }
 
- /* Realizado */
-.container-cards .realizado img{
+/* Realizado */
+.container-cards .realizado img {
     filter: grayscale(100%);
 }
-.realizado .cards-title button{
+
+.realizado .cards-title button {
     background-color: #000000;
 }
 
 /* Encerrado */
-.container-cards .encerrado{
+.container-cards .encerrado {
     border: 2px solid #1DBE24;
 }
-.container-cards .encerrado img{
-    filter: grayscale(100%);
-}
-.encerrado .cards-title button{
+
+    .container-cards .encerrado img {
+        filter: grayscale(100%);
+    }
+
+.encerrado .cards-title button {
     background-color: #1DBE24;
 }
-.cards-title{
-    position: absolute;
-    bottom: 0;
+.cards-title {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 0px 0px 16px 16px;
     width: 100%;
     color: #FFF;
-    background: url(imagens/filter-event.png) no-repeat;
-    background-size: cover;
-    border-radius: 0px 0px 16px 16px;
+    background-color: #2735D4;
+    height: 179px;
 }
-.filter-card{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: black;
-    border-radius: 16px;
-    opacity: 0.4;
-}
-.cards-title-button{
+
+.cards-title-button {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.button-mobile{
+
+.button-mobile {
     display: none;
 }
-.cards-title-button button{
+
+.cards-title-button button {
     border: none;
-    background-color: #E30000;
-    color: #FFF;
-    width: 182px;
-    height: 48px;    
-    font-family: "Rubik", sans-serif;
+    background-color: #80FF00;
+    color: #2735D4;
     font-weight: 500;
+    width: 182px;
+    font-size: 14px;
+    height: 48px;
+    font-family: "Rubik", sans-serif;
     border-radius: 8px;
     text-transform: uppercase;
     cursor: pointer;
-    margin-bottom: 16px;
+    margin-top: 16px;
 }
-.cards-title-button button:hover{
-    box-shadow: 0px 1px 12px 0px #0000007A;
-}
-.cards-title-button strong{
+
+    .cards-title-button button:hover {
+        box-shadow: 0px 1px 12px 0px #0000007A;
+    }
+
+.cards-title-button strong {
     font-size: 14px;
     font-weight: 500;
     line-height: 16.59px;
 }
-.cards-title h3{
-    font-size: 20px;
+
+.cards-title h3 {
+    font-size: 18px;
+    height: 40px;
+    display: flex;
+    align-items: center;
     font-weight: 600;
-    line-height: 8px;
-    margin: 20px 0px 8px 0px;
+    line-height: 20px;
+    padding: 0px 8px;
+    margin: 0px 0px 8px 0px;
 }
 .ponto{
     font-size: 14px;
@@ -348,74 +376,6 @@ header nav a{
     margin-bottom: 24px !important;
     color: #8C9BA5;
 }
-.container-descontos{
-    background-color: #F3F3F3;
-    width: calc(100% - 144px);
-    max-width: calc(1440px - 144px);
-    padding: 64px 72px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.container-descontos h1{
-    margin: 0px 0px 40px 0px;
-    font-size: 32px;
-    width: 50%;
-    text-align: center;
-    text-transform: uppercase;
-}
-.container-descontos p{
-    margin: 4px 0px 8px 0px;
-}
-.descontos{
-    display: flex;
-}
-.image-descontos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 250px;
-    text-align: center;        
-    margin: 0px 32px 0px 32px;
-}
-.logo-desconto-centauro{
-    background-color: #E30000;
-    width: 80px;
-    height: 80px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-}
-.logo-desconto-nike{
-    background-color: #111111;
-    width: 80px;
-    height: 80px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-}
-.logo-desconto-spoint{
-    background-color: #FFD600;
-    width: 80px;
-    height: 80px;
-    border-radius: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 16px;
-}
-.text-descontos strong{
-    font-size: 18px;
-}
-.text-descontos p{
-    font-size: 16px;
-}
 footer{
     width: 100%;
     max-width: 1440px;
@@ -423,7 +383,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #111111;
+    background-color: #2735D4;
     color: #FFF;
 }
 footer h2{
@@ -439,8 +399,11 @@ footer p{
     display: flex;
     align-items: center;
     width: 100%;
-    max-width: 635px;
+    max-width: 180px;
     justify-content: space-between;
+}
+.logo-footer img{
+    width: 100%;
 }
 .ticket img{
     margin-bottom: 26px;
@@ -463,13 +426,6 @@ footer p{
     color: #FFF;
 
 }
-.site-spoint{
-    text-decoration: none;
-    color: #000000;
-}
-.link-spoint{
-    text-decoration: underline;
-}
 @media (max-width: 768px){
     header nav{
         overflow-x: scroll;
@@ -480,7 +436,7 @@ footer p{
     }
     .background-inicio-logo{
         width: calc(100% - 40px);
-        padding: 106px 20px 0px 20px;
+        padding: 70px 20px 0px 20px;
         justify-content: space-around;
         align-items: center;
         height: 75%;
@@ -490,9 +446,14 @@ footer p{
         background-position-x: 60%;
         height: 600px;
     }
-    .background-inicio-logo .desbrava-mobile{
+    .background-inicio-logo .olympikus-mobile{
         display: flex;
         max-width: 300px;
+    }
+    .background-inicio-logo img{
+        display: flex;
+        width: 100%;
+        max-width: 200px;
     }
     .image-mobile{
         display: flex;
@@ -501,12 +462,12 @@ footer p{
         justify-content: center;
         align-items: center;
     }
-    .image-mobile .desbrava-nike{
+    .image-mobile .olympikus-nike{
         margin-top: 24px;
         width: 60% !important;
     }
-    .desbrava-desktop{
-        display: none;
+    .olympikus-desktop{
+        display: flex;
     }
     .background-inicio{
         background:none;
@@ -560,6 +521,7 @@ footer p{
         width: 100%;
         height: 100%;
         border-radius: 0px;
+        padding: 0px;
     }
     .filter-play{
         height: 100%;
@@ -579,7 +541,7 @@ footer p{
         margin: 24px 0px;
     }
     .container-circuitos{
-        margin: 64px 0px 24px 0px;
+        margin: 38px 0px 24px 0px;
     }
     .container-circuitos .circuitos{
         width: calc(100% - 40px);
@@ -600,7 +562,7 @@ footer p{
         font-family: "Rubik", sans-serif;
         font-weight: 600;
     }
-    .cards-centauro{
+    .cards-oly{
         display: flex;
         align-items: center;
         height: auto;
@@ -610,14 +572,17 @@ footer p{
         border-radius: 0;
         margin: 0;
     }
-    .cards-centauro img{
+    .cards-oly img{
         width: 110px;
         height: 110px;
         border-radius: 4px;
-        object-fit: cover;
+        object-fit: fill;
     }
     .d-km {
         margin-bottom: 0px !important;
+    }
+    .border-cards{
+        border: 0;
     }
     .cards-title{
         position: inherit;
@@ -625,6 +590,7 @@ footer p{
         color: #000000;
         align-items: flex-start;
         margin-left: 18px;
+        height: 120px;
     }
     .cards-title-button{
         flex-direction: row;
@@ -634,13 +600,14 @@ footer p{
         height: 32px;
         font-size: 12px;
         border-radius: 4px;        
-        margin-bottom: 0px;
+        margin: 0px;
     }
     .cards-title h3 {
         font-size: 14px;
         font-weight: 600;
         line-height: 23px;
         margin: 4px 0px;
+        padding: 0px;
     }
     .cards-title p{
         font-size: 14px;
@@ -664,6 +631,7 @@ footer p{
     }
     .container-cards{        
     flex-wrap: wrap;
+    margin-top: 24px;
     }
     .filter-card{
         display: none;
@@ -684,40 +652,6 @@ footer p{
     }
     .encerrado .cards-title button{
         background-color: #1DBE24;
-    }
-    .container-descontos{
-        width: calc(100% - 32px);
-        padding: 32px 16px;
-    }
-    .container-descontos h1{
-        width: 100%;
-        font-size: 18px;
-        text-align: left;
-    }
-    .descontos{
-        flex-direction: column;
-        width: 100%;
-    }
-    .spoint{
-        width: 70% !important;
-    }
-    .image-descontos{
-        display: flex;
-        flex-direction: row;  
-        margin: 0;  
-        max-width: 100%;
-    }
-    .image-descontos .logo-desconto-centauro, .logo-desconto-nike, .logo-desconto-spoint{
-        width: 64px;
-        height: 64px;
-    }
-    .image-descontos img{
-        width: 80%;
-    }
-    .image-descontos .text-descontos{
-        width: 75%;
-        text-align: left;
-        margin-left: 16px;
     }
     footer p{
         padding: 0px 16px;
